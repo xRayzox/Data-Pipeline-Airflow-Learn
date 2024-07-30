@@ -1256,3 +1256,128 @@ File Path                                       PID    Runtime      # DAGs    # 
 /opt/airflow/dags/pipeline_dag.py                                        1           0  0.21s           2024-07-30T10:33:47
 ================================================================================
 [2024-07-30T10:34:13.630+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
+[2024-07-30T10:48:00.422+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2024-07-30T10:48:00.424+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2024-07-30T10:48:00.426+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2024-07-30T10:48:00.428+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2024-07-30T10:48:00.491+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2024-07-30T10:48:01.314+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/create_tables_and_buckets.py    224  0.07s             0           0
+/opt/airflow/dags/pipeline_dag.py                 221  0.68s             0           0
+================================================================================
+[2024-07-30T10:48:31.611+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/pipeline_dag.py                                        1           0  2.24s           2024-07-30T10:48:02
+/opt/airflow/dags/create_tables_and_buckets.py                           1           0  1.62s           2024-07-30T10:48:02
+================================================================================
+[2024-07-30T10:49:01.749+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/create_tables_and_buckets.py                           1           0  1.14s           2024-07-30T10:48:34
+/opt/airflow/dags/pipeline_dag.py                                        1           0  0.69s           2024-07-30T10:48:33
+================================================================================
+[2024-07-30T10:49:31.795+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/create_tables_and_buckets.py                           1           0  0.39s           2024-07-30T10:49:04
+/opt/airflow/dags/pipeline_dag.py                                        1           0  0.28s           2024-07-30T10:49:04
+================================================================================
+[2024-07-30T10:50:02.372+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/create_tables_and_buckets.py                           1           0  0.37s           2024-07-30T10:49:35
+/opt/airflow/dags/pipeline_dag.py                                        1           0  0.21s           2024-07-30T10:49:35
+================================================================================
+[2024-07-30T10:50:32.633+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/create_tables_and_buckets.py                           1           0  0.61s           2024-07-30T10:50:06
+/opt/airflow/dags/pipeline_dag.py                                        1           0  0.39s           2024-07-30T10:50:05
+================================================================================
+[2024-07-30T10:51:02.970+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/create_tables_and_buckets.py                           1           0  0.57s           2024-07-30T10:50:37
+/opt/airflow/dags/pipeline_dag.py                                        1           0  0.23s           2024-07-30T10:50:36
+================================================================================
+[2024-07-30T10:51:33.139+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/create_tables_and_buckets.py                           1           0  0.44s           2024-07-30T10:51:08
+/opt/airflow/dags/pipeline_dag.py                                        1           0  0.32s           2024-07-30T10:51:06
+================================================================================
+[2024-07-30T10:52:03.343+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/create_tables_and_buckets.py                           1           0  0.68s           2024-07-30T10:51:39
+/opt/airflow/dags/pipeline_dag.py                                        1           0  0.24s           2024-07-30T10:51:37
+================================================================================
+[2024-07-30T10:52:33.394+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/pipeline_dag.py                                        1           0  0.43s           2024-07-30T10:52:08
+/opt/airflow/dags/create_tables_and_buckets.py                           1           0  0.30s           2024-07-30T10:52:09
+================================================================================
+[2024-07-30T10:53:00.974+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2024-07-30T10:53:01.022+0000] {manager.py:740} INFO - There are 2 files in /opt/airflow/dags
+[2024-07-30T10:53:04.068+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/create_tables_and_buckets.py                           1           0  0.42s           2024-07-30T10:52:40
+/opt/airflow/dags/pipeline_dag.py                                        1           0  0.35s           2024-07-30T10:52:38
+================================================================================
+[2024-07-30T10:53:34.509+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/create_tables_and_buckets.py                           1           0  0.38s           2024-07-30T10:53:10
+/opt/airflow/dags/pipeline_dag.py                                        1           0  0.22s           2024-07-30T10:53:09
+================================================================================
+[2024-07-30T10:54:05.172+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+----------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/create_tables_and_buckets.py                           1           0  0.59s           2024-07-30T10:53:41
+/opt/airflow/dags/pipeline_dag.py                                        1           0  0.35s           2024-07-30T10:53:39
+================================================================================
+[2024-07-30T10:54:33.947+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15

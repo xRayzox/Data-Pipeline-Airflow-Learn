@@ -1011,3 +1011,45 @@ ModuleNotFoundError: No module named 'minio'
 [2024-07-30T10:51:08.280+0000] {logging_mixin.py:188} INFO - [2024-07-30T10:51:08.280+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2024-07-30T10:51:08.311+0000] {logging_mixin.py:188} INFO - [2024-07-30T10:51:08.311+0000] {dag.py:3954} INFO - Setting next_dagrun for create_tables_and_buckets_dag to 2024-07-30 10:51:08.028773+00:00, run_after=2024-07-31 10:51:08.028773+00:00
 [2024-07-30T10:51:08.358+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_tables_and_buckets.py took 0.382 seconds
+[2024-07-30T10:51:38.524+0000] {processor.py:161} INFO - Started process (PID=345) to work on /opt/airflow/dags/create_tables_and_buckets.py
+[2024-07-30T10:51:38.528+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_tables_and_buckets.py for tasks to queue
+[2024-07-30T10:51:38.535+0000] {logging_mixin.py:188} INFO - [2024-07-30T10:51:38.533+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_tables_and_buckets.py
+[2024-07-30T10:51:38.619+0000] {processor.py:840} INFO - DAG(s) 'create_tables_and_buckets_dag' retrieved from /opt/airflow/dags/create_tables_and_buckets.py
+[2024-07-30T10:51:38.967+0000] {logging_mixin.py:188} INFO - [2024-07-30T10:51:38.967+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-30T10:51:39.027+0000] {logging_mixin.py:188} INFO - [2024-07-30T10:51:39.026+0000] {dag.py:3954} INFO - Setting next_dagrun for create_tables_and_buckets_dag to 2024-07-30 10:51:38.572510+00:00, run_after=2024-07-31 10:51:38.572510+00:00
+[2024-07-30T10:51:39.127+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_tables_and_buckets.py took 0.623 seconds
+[2024-07-30T10:52:09.206+0000] {processor.py:161} INFO - Started process (PID=361) to work on /opt/airflow/dags/create_tables_and_buckets.py
+[2024-07-30T10:52:09.208+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_tables_and_buckets.py for tasks to queue
+[2024-07-30T10:52:09.210+0000] {logging_mixin.py:188} INFO - [2024-07-30T10:52:09.210+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_tables_and_buckets.py
+[2024-07-30T10:52:09.245+0000] {processor.py:840} INFO - DAG(s) 'create_tables_and_buckets_dag' retrieved from /opt/airflow/dags/create_tables_and_buckets.py
+[2024-07-30T10:52:09.387+0000] {logging_mixin.py:188} INFO - [2024-07-30T10:52:09.387+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-30T10:52:09.414+0000] {logging_mixin.py:188} INFO - [2024-07-30T10:52:09.414+0000] {dag.py:3954} INFO - Setting next_dagrun for create_tables_and_buckets_dag to 2024-07-30 10:52:09.225163+00:00, run_after=2024-07-31 10:52:09.225163+00:00
+[2024-07-30T10:52:09.468+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_tables_and_buckets.py took 0.270 seconds
+[2024-07-30T10:52:39.723+0000] {processor.py:161} INFO - Started process (PID=377) to work on /opt/airflow/dags/create_tables_and_buckets.py
+[2024-07-30T10:52:39.724+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_tables_and_buckets.py for tasks to queue
+[2024-07-30T10:52:39.726+0000] {logging_mixin.py:188} INFO - [2024-07-30T10:52:39.726+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_tables_and_buckets.py
+[2024-07-30T10:52:39.760+0000] {processor.py:840} INFO - DAG(s) 'create_tables_and_buckets_dag' retrieved from /opt/airflow/dags/create_tables_and_buckets.py
+[2024-07-30T10:52:39.898+0000] {logging_mixin.py:188} INFO - [2024-07-30T10:52:39.898+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-30T10:52:39.930+0000] {logging_mixin.py:188} INFO - [2024-07-30T10:52:39.929+0000] {dag.py:3954} INFO - Setting next_dagrun for create_tables_and_buckets_dag to 2024-07-30 10:52:39.742863+00:00, run_after=2024-07-31 10:52:39.742863+00:00
+[2024-07-30T10:52:40.103+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_tables_and_buckets.py took 0.388 seconds
+[2024-07-30T10:53:10.164+0000] {processor.py:161} INFO - Started process (PID=393) to work on /opt/airflow/dags/create_tables_and_buckets.py
+[2024-07-30T10:53:10.165+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_tables_and_buckets.py for tasks to queue
+[2024-07-30T10:53:10.167+0000] {logging_mixin.py:188} INFO - [2024-07-30T10:53:10.166+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_tables_and_buckets.py
+[2024-07-30T10:53:10.197+0000] {processor.py:840} INFO - DAG(s) 'create_tables_and_buckets_dag' retrieved from /opt/airflow/dags/create_tables_and_buckets.py
+[2024-07-30T10:53:10.333+0000] {logging_mixin.py:188} INFO - [2024-07-30T10:53:10.333+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-30T10:53:10.358+0000] {logging_mixin.py:188} INFO - [2024-07-30T10:53:10.358+0000] {dag.py:3954} INFO - Setting next_dagrun for create_tables_and_buckets_dag to 2024-07-30 10:53:10.180508+00:00, run_after=2024-07-31 10:53:10.180508+00:00
+[2024-07-30T10:53:10.500+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_tables_and_buckets.py took 0.343 seconds
+[2024-07-30T10:53:40.768+0000] {processor.py:161} INFO - Started process (PID=409) to work on /opt/airflow/dags/create_tables_and_buckets.py
+[2024-07-30T10:53:40.769+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_tables_and_buckets.py for tasks to queue
+[2024-07-30T10:53:40.772+0000] {logging_mixin.py:188} INFO - [2024-07-30T10:53:40.771+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_tables_and_buckets.py
+[2024-07-30T10:53:40.806+0000] {processor.py:840} INFO - DAG(s) 'create_tables_and_buckets_dag' retrieved from /opt/airflow/dags/create_tables_and_buckets.py
+[2024-07-30T10:53:40.958+0000] {logging_mixin.py:188} INFO - [2024-07-30T10:53:40.958+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-30T10:53:40.981+0000] {logging_mixin.py:188} INFO - [2024-07-30T10:53:40.981+0000] {dag.py:3954} INFO - Setting next_dagrun for create_tables_and_buckets_dag to 2024-07-30 10:53:40.787765+00:00, run_after=2024-07-31 10:53:40.787765+00:00
+[2024-07-30T10:53:41.313+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_tables_and_buckets.py took 0.551 seconds
+[2024-07-30T10:54:11.628+0000] {processor.py:161} INFO - Started process (PID=425) to work on /opt/airflow/dags/create_tables_and_buckets.py
+[2024-07-30T10:54:11.630+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/create_tables_and_buckets.py for tasks to queue
+[2024-07-30T10:54:11.635+0000] {logging_mixin.py:188} INFO - [2024-07-30T10:54:11.634+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/create_tables_and_buckets.py
+[2024-07-30T10:54:11.703+0000] {processor.py:840} INFO - DAG(s) 'create_tables_and_buckets_dag' retrieved from /opt/airflow/dags/create_tables_and_buckets.py
+[2024-07-30T10:54:11.900+0000] {logging_mixin.py:188} INFO - [2024-07-30T10:54:11.900+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2024-07-30T10:54:12.109+0000] {logging_mixin.py:188} INFO - [2024-07-30T10:54:12.109+0000] {dag.py:3954} INFO - Setting next_dagrun for create_tables_and_buckets_dag to 2024-07-30 10:54:11.668638+00:00, run_after=2024-07-31 10:54:11.668638+00:00
+[2024-07-30T10:54:12.172+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/create_tables_and_buckets.py took 0.558 seconds

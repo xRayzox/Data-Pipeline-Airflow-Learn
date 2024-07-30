@@ -153,4 +153,4 @@ and 7 postgres tables named \
 
 ## Clone the project repository
 
-`$ git clone `
+`$ git clone https://github.com/xRayzox/Data-Pipeline-Airflow-Learn.git`
