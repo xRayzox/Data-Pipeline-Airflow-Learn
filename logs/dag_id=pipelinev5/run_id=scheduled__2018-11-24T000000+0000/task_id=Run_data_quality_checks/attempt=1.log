@@ -1,0 +1,42 @@
+[2024-07-30T10:28:06.984+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-30T10:28:07.059+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipelinev5.Run_data_quality_checks scheduled__2018-11-24T00:00:00+00:00 [queued]>
+[2024-07-30T10:28:07.086+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipelinev5.Run_data_quality_checks scheduled__2018-11-24T00:00:00+00:00 [queued]>
+[2024-07-30T10:28:07.089+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-30T10:28:07.259+0000] {taskinstance.py:2330} INFO - Executing <Task(DataQualityOperator): Run_data_quality_checks> on 2018-11-24 00:00:00+00:00
+[2024-07-30T10:28:07.275+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=1325) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-07-30T10:28:07.279+0000] {standard_task_runner.py:63} INFO - Started process 1328 to run task
+[2024-07-30T10:28:07.280+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'pipelinev5', 'Run_data_quality_checks', 'scheduled__2018-11-24T00:00:00+00:00', '--job-id', '260', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_dag.py', '--cfg-path', '/tmp/tmp9zpdtwpz']
+[2024-07-30T10:28:07.287+0000] {standard_task_runner.py:91} INFO - Job 260: Subtask Run_data_quality_checks
+[2024-07-30T10:28:07.641+0000] {task_command.py:426} INFO - Running <TaskInstance: pipelinev5.Run_data_quality_checks scheduled__2018-11-24T00:00:00+00:00 [running]> on host c3b60429ae20
+[2024-07-30T10:28:08.090+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='pipelinev5' AIRFLOW_CTX_TASK_ID='Run_data_quality_checks' AIRFLOW_CTX_EXECUTION_DATE='2018-11-24T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2018-11-24T00:00:00+00:00'
+[2024-07-30T10:28:08.094+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-30T10:28:08.172+0000] {data_quality_operator.py:23} INFO - Checking Data Quality for songplays table
+[2024-07-30T10:28:08.210+0000] {base.py:84} INFO - Using connection ID 'postgres_conn' for task execution.
+[2024-07-30T10:28:08.239+0000] {sql.py:487} INFO - Running statement: SELECT COUNT(*) FROM songplays, parameters: None
+[2024-07-30T10:28:08.246+0000] {sql.py:496} INFO - Rows affected: 1
+[2024-07-30T10:28:08.250+0000] {data_quality_operator.py:30} INFO - Data quality on table songplays check passed with 5336 records
+[2024-07-30T10:28:08.251+0000] {data_quality_operator.py:23} INFO - Checking Data Quality for users table
+[2024-07-30T10:28:08.276+0000] {base.py:84} INFO - Using connection ID 'postgres_conn' for task execution.
+[2024-07-30T10:28:08.310+0000] {sql.py:487} INFO - Running statement: SELECT COUNT(*) FROM users, parameters: None
+[2024-07-30T10:28:09.038+0000] {sql.py:496} INFO - Rows affected: 1
+[2024-07-30T10:28:09.041+0000] {data_quality_operator.py:30} INFO - Data quality on table users check passed with 91 records
+[2024-07-30T10:28:09.042+0000] {data_quality_operator.py:23} INFO - Checking Data Quality for songs table
+[2024-07-30T10:28:09.066+0000] {base.py:84} INFO - Using connection ID 'postgres_conn' for task execution.
+[2024-07-30T10:28:09.091+0000] {sql.py:487} INFO - Running statement: SELECT COUNT(*) FROM songs, parameters: None
+[2024-07-30T10:28:09.226+0000] {sql.py:496} INFO - Rows affected: 1
+[2024-07-30T10:28:09.233+0000] {data_quality_operator.py:30} INFO - Data quality on table songs check passed with 71 records
+[2024-07-30T10:28:09.235+0000] {data_quality_operator.py:23} INFO - Checking Data Quality for artists table
+[2024-07-30T10:28:09.264+0000] {base.py:84} INFO - Using connection ID 'postgres_conn' for task execution.
+[2024-07-30T10:28:09.297+0000] {sql.py:487} INFO - Running statement: SELECT COUNT(*) FROM artists, parameters: None
+[2024-07-30T10:28:09.304+0000] {sql.py:496} INFO - Rows affected: 1
+[2024-07-30T10:28:09.307+0000] {data_quality_operator.py:30} INFO - Data quality on table artists check passed with 69 records
+[2024-07-30T10:28:09.308+0000] {data_quality_operator.py:23} INFO - Checking Data Quality for times table
+[2024-07-30T10:28:09.328+0000] {base.py:84} INFO - Using connection ID 'postgres_conn' for task execution.
+[2024-07-30T10:28:09.368+0000] {sql.py:487} INFO - Running statement: SELECT COUNT(*) FROM times, parameters: None
+[2024-07-30T10:28:09.375+0000] {sql.py:496} INFO - Rows affected: 1
+[2024-07-30T10:28:09.378+0000] {data_quality_operator.py:30} INFO - Data quality on table times check passed with 5332 records
+[2024-07-30T10:28:09.379+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-30T10:28:09.411+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=pipelinev5, task_id=Run_data_quality_checks, run_id=scheduled__2018-11-24T00:00:00+00:00, execution_date=20181124T000000, start_date=20240730T102807, end_date=20240730T102809
+[2024-07-30T10:28:09.571+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-30T10:28:09.609+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-30T10:28:09.672+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

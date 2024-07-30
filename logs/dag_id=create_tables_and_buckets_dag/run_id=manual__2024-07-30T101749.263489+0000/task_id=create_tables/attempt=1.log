@@ -1,0 +1,193 @@
+[2024-07-30T10:17:51.346+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-30T10:17:51.368+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: create_tables_and_buckets_dag.create_tables manual__2024-07-30T10:17:49.263489+00:00 [queued]>
+[2024-07-30T10:17:51.378+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: create_tables_and_buckets_dag.create_tables manual__2024-07-30T10:17:49.263489+00:00 [queued]>
+[2024-07-30T10:17:51.378+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-30T10:17:51.848+0000] {taskinstance.py:2330} INFO - Executing <Task(PostgresOperator): create_tables> on 2024-07-30 10:17:49.263489+00:00
+[2024-07-30T10:17:51.862+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=508) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-07-30T10:17:51.865+0000] {standard_task_runner.py:63} INFO - Started process 510 to run task
+[2024-07-30T10:17:51.861+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'create_tables_and_buckets_dag', 'create_tables', 'manual__2024-07-30T10:17:49.263489+00:00', '--job-id', '24', '--raw', '--subdir', 'DAGS_FOLDER/create_tables_and_buckets.py', '--cfg-path', '/tmp/tmplmav4ebg']
+[2024-07-30T10:17:51.877+0000] {standard_task_runner.py:91} INFO - Job 24: Subtask create_tables
+[2024-07-30T10:17:52.114+0000] {task_command.py:426} INFO - Running <TaskInstance: create_tables_and_buckets_dag.create_tables manual__2024-07-30T10:17:49.263489+00:00 [running]> on host c3b60429ae20
+[2024-07-30T10:17:52.703+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='create_tables_and_buckets_dag' AIRFLOW_CTX_TASK_ID='create_tables' AIRFLOW_CTX_EXECUTION_DATE='2024-07-30T10:17:49.263489+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-07-30T10:17:49.263489+00:00'
+[2024-07-30T10:17:52.706+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-30T10:17:52.735+0000] {sql.py:276} INFO - Executing: -- Create staging_events table
+CREATE TABLE IF NOT EXISTS staging_events(
+    artist VARCHAR,
+    auth VARCHAR,
+    firstName VARCHAR,
+    gender VARCHAR,
+    itemInSession INTEGER,
+    lastName VARCHAR,
+    length FLOAT,
+    level VARCHAR,
+    location VARCHAR,
+    method VARCHAR,
+    page VARCHAR,
+    registration FLOAT,
+    sessionId INTEGER,
+    song VARCHAR,
+    status INTEGER,
+    ts BIGINT,
+    userAgent VARCHAR,
+    userId INTEGER
+);
+
+-- Create staging_songs table
+CREATE TABLE IF NOT EXISTS staging_songs (
+    num_songs INTEGER,
+    artist_id VARCHAR,
+    artist_latitude DOUBLE PRECISION,
+    artist_longitude DOUBLE PRECISION,
+    artist_location VARCHAR,
+    artist_name VARCHAR,
+    song_id VARCHAR,
+    title VARCHAR,
+    duration DOUBLE PRECISION,
+    year INTEGER
+);
+
+-- Create songplays table
+CREATE TABLE IF NOT EXISTS songplays (
+    playid varchar(32) NOT NULL,
+    start_time timestamp NOT NULL,
+    userid int4 NOT NULL,
+    "level" varchar(256),
+    songid varchar(256),
+    artistid varchar(256),
+    sessionid int4,
+    location varchar(256),
+    user_agent varchar(256),
+    CONSTRAINT songplays_pkey PRIMARY KEY (playid)
+);
+
+-- Create users table
+CREATE TABLE IF NOT EXISTS users(
+    user_id             SERIAL          PRIMARY KEY,
+    first_name          VARCHAR         NOT NULL,
+    last_name           VARCHAR         NOT NULL,
+    gender              VARCHAR(1)      NOT NULL,
+    level               VARCHAR         NOT NULL
+);
+
+-- Create songs table
+CREATE TABLE IF NOT EXISTS songs(
+    song_id             VARCHAR         PRIMARY KEY,
+    title               VARCHAR         NOT NULL,
+    artist_id           VARCHAR         NOT NULL,
+    year                INTEGER         NOT NULL,
+    duration            NUMERIC
+);
+
+-- Create artists table
+CREATE TABLE IF NOT EXISTS artists(
+    artist_id           VARCHAR         PRIMARY KEY,
+    name                VARCHAR         NOT NULL,
+    location            VARCHAR,
+    latitude            NUMERIC,
+    longitude           NUMERIC
+);
+
+-- Create times table
+CREATE TABLE IF NOT EXISTS times(
+    start_time          TIMESTAMP       PRIMARY KEY,
+    hour                INTEGER         NOT NULL,
+    day                 INTEGER         NOT NULL,
+    week                INTEGER         NOT NULL,
+    month               INTEGER         NOT NULL,
+    year                INTEGER         NOT NULL,
+    weekday             VARCHAR(20)     NOT NULL
+);
+[2024-07-30T10:17:52.761+0000] {base.py:84} INFO - Using connection ID 'postgres_conn' for task execution.
+[2024-07-30T10:17:52.789+0000] {base.py:84} INFO - Using connection ID 'postgres_conn' for task execution.
+[2024-07-30T10:17:52.824+0000] {sql.py:487} INFO - Running statement: -- Create staging_events table
+CREATE TABLE IF NOT EXISTS staging_events(
+    artist VARCHAR,
+    auth VARCHAR,
+    firstName VARCHAR,
+    gender VARCHAR,
+    itemInSession INTEGER,
+    lastName VARCHAR,
+    length FLOAT,
+    level VARCHAR,
+    location VARCHAR,
+    method VARCHAR,
+    page VARCHAR,
+    registration FLOAT,
+    sessionId INTEGER,
+    song VARCHAR,
+    status INTEGER,
+    ts BIGINT,
+    userAgent VARCHAR,
+    userId INTEGER
+);
+
+-- Create staging_songs table
+CREATE TABLE IF NOT EXISTS staging_songs (
+    num_songs INTEGER,
+    artist_id VARCHAR,
+    artist_latitude DOUBLE PRECISION,
+    artist_longitude DOUBLE PRECISION,
+    artist_location VARCHAR,
+    artist_name VARCHAR,
+    song_id VARCHAR,
+    title VARCHAR,
+    duration DOUBLE PRECISION,
+    year INTEGER
+);
+
+-- Create songplays table
+CREATE TABLE IF NOT EXISTS songplays (
+    playid varchar(32) NOT NULL,
+    start_time timestamp NOT NULL,
+    userid int4 NOT NULL,
+    "level" varchar(256),
+    songid varchar(256),
+    artistid varchar(256),
+    sessionid int4,
+    location varchar(256),
+    user_agent varchar(256),
+    CONSTRAINT songplays_pkey PRIMARY KEY (playid)
+);
+
+-- Create users table
+CREATE TABLE IF NOT EXISTS users(
+    user_id             SERIAL          PRIMARY KEY,
+    first_name          VARCHAR         NOT NULL,
+    last_name           VARCHAR         NOT NULL,
+    gender              VARCHAR(1)      NOT NULL,
+    level               VARCHAR         NOT NULL
+);
+
+-- Create songs table
+CREATE TABLE IF NOT EXISTS songs(
+    song_id             VARCHAR         PRIMARY KEY,
+    title               VARCHAR         NOT NULL,
+    artist_id           VARCHAR         NOT NULL,
+    year                INTEGER         NOT NULL,
+    duration            NUMERIC
+);
+
+-- Create artists table
+CREATE TABLE IF NOT EXISTS artists(
+    artist_id           VARCHAR         PRIMARY KEY,
+    name                VARCHAR         NOT NULL,
+    location            VARCHAR,
+    latitude            NUMERIC,
+    longitude           NUMERIC
+);
+
+-- Create times table
+CREATE TABLE IF NOT EXISTS times(
+    start_time          TIMESTAMP       PRIMARY KEY,
+    hour                INTEGER         NOT NULL,
+    day                 INTEGER         NOT NULL,
+    week                INTEGER         NOT NULL,
+    month               INTEGER         NOT NULL,
+    year                INTEGER         NOT NULL,
+    weekday             VARCHAR(20)     NOT NULL
+);, parameters: None
+[2024-07-30T10:17:52.837+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-30T10:17:52.868+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=create_tables_and_buckets_dag, task_id=create_tables, run_id=manual__2024-07-30T10:17:49.263489+00:00, execution_date=20240730T101749, start_date=20240730T101751, end_date=20240730T101752
+[2024-07-30T10:17:53.137+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-30T10:17:53.190+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-30T10:17:53.285+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

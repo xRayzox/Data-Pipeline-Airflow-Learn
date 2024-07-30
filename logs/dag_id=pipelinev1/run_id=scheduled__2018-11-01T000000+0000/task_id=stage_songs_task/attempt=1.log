@@ -1,0 +1,110 @@
+[2024-07-30T09:54:48.530+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-30T09:54:48.576+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipelinev1.stage_songs_task scheduled__2018-11-01T00:00:00+00:00 [queued]>
+[2024-07-30T09:54:48.593+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipelinev1.stage_songs_task scheduled__2018-11-01T00:00:00+00:00 [queued]>
+[2024-07-30T09:54:48.594+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-30T09:54:48.686+0000] {taskinstance.py:2330} INFO - Executing <Task(StageToPostgresOperator): stage_songs_task> on 2018-11-01 00:00:00+00:00
+[2024-07-30T09:54:48.692+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=1324) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-07-30T09:54:48.694+0000] {standard_task_runner.py:63} INFO - Started process 1326 to run task
+[2024-07-30T09:54:48.692+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'pipelinev1', 'stage_songs_task', 'scheduled__2018-11-01T00:00:00+00:00', '--job-id', '50', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_dag.py', '--cfg-path', '/tmp/tmpyd_5kaqk']
+[2024-07-30T09:54:48.695+0000] {standard_task_runner.py:91} INFO - Job 50: Subtask stage_songs_task
+[2024-07-30T09:54:48.798+0000] {task_command.py:426} INFO - Running <TaskInstance: pipelinev1.stage_songs_task scheduled__2018-11-01T00:00:00+00:00 [running]> on host 6ec5d930b7c6
+[2024-07-30T09:54:48.971+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='pipelinev1' AIRFLOW_CTX_TASK_ID='stage_songs_task' AIRFLOW_CTX_EXECUTION_DATE='2018-11-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2018-11-01T00:00:00+00:00'
+[2024-07-30T09:54:48.972+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-30T09:54:49.005+0000] {base.py:84} INFO - Using connection ID 'minio_conn' for task execution.
+[2024-07-30T09:54:49.006+0000] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='minio_conn', conn_type='aws') credentials retrieved from login and password.
+[2024-07-30T09:54:49.035+0000] {base.py:84} INFO - Using connection ID 'postgres_conn' for task execution.
+[2024-07-30T09:54:49.068+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-30T09:54:49.085+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=pipelinev1, task_id=stage_songs_task, run_id=scheduled__2018-11-01T00:00:00+00:00, execution_date=20181101T000000, start_date=20240730T095448, end_date=20240730T095449
+[2024-07-30T09:54:49.150+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-30T09:54:49.170+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-30T10:24:45.812+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-30T10:24:45.901+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipelinev1.stage_songs_task scheduled__2018-11-01T00:00:00+00:00 [queued]>
+[2024-07-30T10:24:45.922+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipelinev1.stage_songs_task scheduled__2018-11-01T00:00:00+00:00 [queued]>
+[2024-07-30T10:24:45.923+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-30T10:24:45.986+0000] {taskinstance.py:2330} INFO - Executing <Task(StageToPostgresOperator): stage_songs_task> on 2018-11-01 00:00:00+00:00
+[2024-07-30T10:24:45.993+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=784) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-07-30T10:24:45.994+0000] {standard_task_runner.py:63} INFO - Started process 785 to run task
+[2024-07-30T10:24:45.993+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'pipelinev1', 'stage_songs_task', 'scheduled__2018-11-01T00:00:00+00:00', '--job-id', '44', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_dag.py', '--cfg-path', '/tmp/tmp782yka4t']
+[2024-07-30T10:24:45.995+0000] {standard_task_runner.py:91} INFO - Job 44: Subtask stage_songs_task
+[2024-07-30T10:24:46.099+0000] {task_command.py:426} INFO - Running <TaskInstance: pipelinev1.stage_songs_task scheduled__2018-11-01T00:00:00+00:00 [running]> on host c3b60429ae20
+[2024-07-30T10:24:46.261+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='pipelinev1' AIRFLOW_CTX_TASK_ID='stage_songs_task' AIRFLOW_CTX_EXECUTION_DATE='2018-11-01T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2018-11-01T00:00:00+00:00'
+[2024-07-30T10:24:46.262+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-30T10:24:46.294+0000] {base.py:84} INFO - Using connection ID 'minio_conn' for task execution.
+[2024-07-30T10:24:46.295+0000] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='minio_conn', conn_type='aws') credentials retrieved from login and password.
+[2024-07-30T10:24:46.323+0000] {base.py:84} INFO - Using connection ID 'postgres_conn' for task execution.
+[2024-07-30T10:24:47.109+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:47.544+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:47.837+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:48.221+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:48.469+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:48.813+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:49.175+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:49.334+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:49.642+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:49.816+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:49.978+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:50.128+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:50.291+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:50.438+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:50.587+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:50.973+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:51.338+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:51.671+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:52.012+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:52.300+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:52.475+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:52.655+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:52.840+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:52.991+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:53.146+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:53.307+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:53.606+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:53.999+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:54.281+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:54.608+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:54.928+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:55.234+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:55.391+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:55.551+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:55.720+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:55.854+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:55.999+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:56.132+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:56.366+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:56.625+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:56.892+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:57.248+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:57.683+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:57.991+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:58.248+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:58.419+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:58.708+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:58.900+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:59.026+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:59.177+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:59.309+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:59.472+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:59.634+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:24:59.783+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:25:00.114+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:25:00.418+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:25:00.733+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:25:01.001+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:25:01.335+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:25:01.501+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:25:01.656+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:25:01.862+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:25:02.091+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:25:02.353+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:25:02.512+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:25:02.702+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:25:02.994+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:25:03.318+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:25:03.655+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:25:04.007+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:25:04.464+0000] {stage_postgresql_operator.py:48} INFO - Adding 1 entries to postgres table 'staging_songs'
+[2024-07-30T10:25:04.611+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-30T10:25:04.625+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=pipelinev1, task_id=stage_songs_task, run_id=scheduled__2018-11-01T00:00:00+00:00, execution_date=20181101T000000, start_date=20240730T102445, end_date=20240730T102504
+[2024-07-30T10:25:04.683+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-30T10:25:04.705+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-30T10:25:04.729+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,40 @@
+[2024-07-30T10:00:26.026+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-30T10:00:26.058+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipelinev3.stage_songs_task scheduled__2018-11-05T00:00:00+00:00 [queued]>
+[2024-07-30T10:00:26.071+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipelinev3.stage_songs_task scheduled__2018-11-05T00:00:00+00:00 [queued]>
+[2024-07-30T10:00:26.071+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-30T10:00:26.125+0000] {taskinstance.py:2330} INFO - Executing <Task(StageToPostgresOperator): stage_songs_task> on 2018-11-05 00:00:00+00:00
+[2024-07-30T10:00:26.133+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=1586) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-07-30T10:00:26.134+0000] {standard_task_runner.py:63} INFO - Started process 1587 to run task
+[2024-07-30T10:00:26.133+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'pipelinev3', 'stage_songs_task', 'scheduled__2018-11-05T00:00:00+00:00', '--job-id', '90', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_dag.py', '--cfg-path', '/tmp/tmpal7djcs8']
+[2024-07-30T10:00:26.136+0000] {standard_task_runner.py:91} INFO - Job 90: Subtask stage_songs_task
+[2024-07-30T10:00:26.224+0000] {task_command.py:426} INFO - Running <TaskInstance: pipelinev3.stage_songs_task scheduled__2018-11-05T00:00:00+00:00 [running]> on host 6ec5d930b7c6
+[2024-07-30T10:00:26.387+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='pipelinev3' AIRFLOW_CTX_TASK_ID='stage_songs_task' AIRFLOW_CTX_EXECUTION_DATE='2018-11-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2018-11-05T00:00:00+00:00'
+[2024-07-30T10:00:26.388+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-30T10:00:26.418+0000] {base.py:84} INFO - Using connection ID 'minio_conn' for task execution.
+[2024-07-30T10:00:26.419+0000] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='minio_conn', conn_type='aws') credentials retrieved from login and password.
+[2024-07-30T10:00:26.444+0000] {base.py:84} INFO - Using connection ID 'postgres_conn' for task execution.
+[2024-07-30T10:00:26.592+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-30T10:00:26.608+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=pipelinev3, task_id=stage_songs_task, run_id=scheduled__2018-11-05T00:00:00+00:00, execution_date=20181105T000000, start_date=20240730T100026, end_date=20240730T100026
+[2024-07-30T10:00:26.751+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-30T10:00:26.789+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-30T10:00:26.825+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2024-07-30T10:13:59.633+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2024-07-30T10:13:59.678+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipelinev3.stage_songs_task scheduled__2018-11-05T00:00:00+00:00 [queued]>
+[2024-07-30T10:13:59.696+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipelinev3.stage_songs_task scheduled__2018-11-05T00:00:00+00:00 [queued]>
+[2024-07-30T10:13:59.697+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2024-07-30T10:13:59.865+0000] {taskinstance.py:2330} INFO - Executing <Task(StageToPostgresOperator): stage_songs_task> on 2018-11-05 00:00:00+00:00
+[2024-07-30T10:13:59.874+0000] {logging_mixin.py:188} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=363) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2024-07-30T10:13:59.875+0000] {standard_task_runner.py:63} INFO - Started process 364 to run task
+[2024-07-30T10:13:59.873+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'pipelinev3', 'stage_songs_task', 'scheduled__2018-11-05T00:00:00+00:00', '--job-id', '10', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_dag.py', '--cfg-path', '/tmp/tmpxlnavscp']
+[2024-07-30T10:13:59.876+0000] {standard_task_runner.py:91} INFO - Job 10: Subtask stage_songs_task
+[2024-07-30T10:14:00.120+0000] {task_command.py:426} INFO - Running <TaskInstance: pipelinev3.stage_songs_task scheduled__2018-11-05T00:00:00+00:00 [running]> on host c3b60429ae20
+[2024-07-30T10:14:00.671+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='pipelinev3' AIRFLOW_CTX_TASK_ID='stage_songs_task' AIRFLOW_CTX_EXECUTION_DATE='2018-11-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2018-11-05T00:00:00+00:00'
+[2024-07-30T10:14:00.674+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2024-07-30T10:14:00.748+0000] {base.py:84} INFO - Using connection ID 'minio_conn' for task execution.
+[2024-07-30T10:14:00.749+0000] {connection_wrapper.py:384} INFO - AWS Connection (conn_id='minio_conn', conn_type='aws') credentials retrieved from login and password.
+[2024-07-30T10:14:00.800+0000] {base.py:84} INFO - Using connection ID 'postgres_conn' for task execution.
+[2024-07-30T10:14:00.871+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2024-07-30T10:14:00.901+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=pipelinev3, task_id=stage_songs_task, run_id=scheduled__2018-11-05T00:00:00+00:00, execution_date=20181105T000000, start_date=20240730T101359, end_date=20240730T101400
+[2024-07-30T10:14:01.097+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2024-07-30T10:14:01.162+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-07-30T10:14:01.307+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
